@@ -1,0 +1,13 @@
+@import "styles/mixins";
+
+.container {
+  padding: 0 15px;
+
+  @include from($media-md) {
+    padding: 0 65px 0 80px;
+  }
+
+  @include from($media-xl) {
+    padding: 0 97px 0 69px;
+  }
+}

@@ -1,0 +1,44 @@
+@import "styles/mixins";
+@import "styles/palette";
+
+.header{
+  @include from($media-sm) {
+    color: red;
+  }
+
+  @include from($media-sm) {
+    color: red;
+  }
+
+  .mobileMenu {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: flex-end;
+
+    @include from($media-md) {
+      display: none;
+    }
+
+    .burgerMenu, .burgerMenu::after, .burgerMenu::before {
+      height: 4px;
+      width: 41px;
+      background-color: $black;
+      display: block;
+      position: absolute;
+      border-radius: 2px;
+    }
+
+    .burgerMenu::after {
+      content: '';
+      margin-top: 8px;
+    }
+
+    .burgerMenu::before {
+      content: '';
+      margin-top: -8px;
+    }
+
+
+  }
+}

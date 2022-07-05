@@ -1,0 +1,7 @@
+@import "styles/typography";
+
+@mixin from($w) {
+  @media screen and (min-width: #{$w}px) {
+    @content;
+  }
+}
